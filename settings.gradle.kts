@@ -22,3 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "HappyFeet"
 include(":app")
 include(":auth:data")
+include(":auth:domain")
+include(":auth:presentation")
