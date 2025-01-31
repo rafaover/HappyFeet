@@ -1,4 +1,6 @@
 pluginManagement {
+    // Includes this module as an additional gradle build logic.
+    includeBuild("build-logic")
     repositories {
         google {
             content {
