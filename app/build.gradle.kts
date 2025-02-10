@@ -1,19 +1,17 @@
+import org.gradle.kotlin.dsl.support.kotlinCompilerOptions
+
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
     alias(libs.plugins.mapsplatform.secrets.plugin)
+    alias(libs.plugins.happyfeet.android.application)
 }
 
 android {
     namespace = "com.example.happyfeet"
-    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.happyfeet"
-        minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -27,15 +25,16 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.1"
     }
     buildFeatures {
         compose = true
+    }
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 
