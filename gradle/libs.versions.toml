@@ -119,3 +119,4 @@ androidDynamicFeature = { id = "com.android.dynamic-feature", version.ref = "agp
 mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsPlugin"}
 
 happyfeet-android-application = { id = "happyfeet.android.application", version = "unspecified" }
+happyfeet-android-application-compose = { id = "happyfeet.android.application.compose", version = "unspecified" }

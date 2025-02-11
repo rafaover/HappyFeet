@@ -1,8 +1,8 @@
 import org.gradle.kotlin.dsl.support.kotlinCompilerOptions
 
 plugins {
+    alias(libs.plugins.happyfeet.android.application.compose)
     alias(libs.plugins.mapsplatform.secrets.plugin)
-    alias(libs.plugins.happyfeet.android.application)
 }
 
 android {
@@ -14,13 +14,6 @@ android {
         }
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
-    }
-    buildFeatures {
-        compose = true
     }
     packaging {
         resources {
