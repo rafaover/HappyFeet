@@ -31,5 +31,9 @@ gradlePlugin {
             id = "happyfeet.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
+        register("androidFeatureUi") {
+            id = "happyfeet.android.feature.ui"
+            implementationClass = "AndroidFeatureUiConventionPlugin"
+        }
     }
 }
