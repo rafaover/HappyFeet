@@ -35,5 +35,9 @@ gradlePlugin {
             id = "happyfeet.android.feature.ui"
             implementationClass = "AndroidFeatureUiConventionPlugin"
         }
+        register("androidRoom") {
+            id = "happyfeet.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
     }
 }
