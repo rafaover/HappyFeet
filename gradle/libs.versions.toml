@@ -121,3 +121,4 @@ mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.
 happyfeet-android-application = { id = "happyfeet.android.application", version = "unspecified" }
 happyfeet-android-application-compose = { id = "happyfeet.android.application.compose", version = "unspecified" }
 happyfeet-android-library = { id = "happyfeet.android.library", version = "unspecified" }
+happyfeet-android-library-compose = { id = "happyfeet.android.library.compose", version = "unspecified" }
