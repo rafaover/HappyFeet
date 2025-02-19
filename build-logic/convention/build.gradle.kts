@@ -23,5 +23,9 @@ gradlePlugin {
             id = "happyfeet.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
+        register("androidLibrary") {
+            id = "happyfeet.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
     }
 }
