@@ -43,5 +43,9 @@ gradlePlugin {
             id = "happyfeet.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }
+        register("jvmKtor") {
+            id = "happyfeet.jvm.ktor"
+            implementationClass = "JvmKtorConventionPlugin"
+        }
     }
 }

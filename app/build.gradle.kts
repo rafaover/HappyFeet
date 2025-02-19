@@ -2,6 +2,7 @@ import org.gradle.kotlin.dsl.support.kotlinCompilerOptions
 
 plugins {
     alias(libs.plugins.happyfeet.android.application.compose)
+    alias(libs.plugins.happyfeet.jvm.ktor)
     alias(libs.plugins.mapsplatform.secrets.plugin)
 }
 

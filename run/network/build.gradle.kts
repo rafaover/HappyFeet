@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.happyfeet.android.library)
+    alias(libs.plugins.happyfeet.jvm.ktor)
 }
 
 android {
