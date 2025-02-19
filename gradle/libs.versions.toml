@@ -124,6 +124,7 @@ happyfeet-android-library = { id = "happyfeet.android.library", version = "unspe
 happyfeet-android-library-compose = { id = "happyfeet.android.library.compose", version = "unspecified" }
 happyfeet-android-feature-ui = { id = "happyfeet.android.feature.ui", version = "unspecified" }
 happyfeet-android-room = { id = "happyfeet.android.room", version = "unspecified" }
+happyfeet-jvm-library = { id = "happyfeet.jvm.library", version = "unspecified" }
 
 [bundles]
 compose = [

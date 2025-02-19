@@ -39,5 +39,9 @@ gradlePlugin {
             id = "happyfeet.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
+        register("jvmLibrary") {
+            id = "happyfeet.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }
