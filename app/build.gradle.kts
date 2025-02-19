@@ -1,41 +1,25 @@
+import org.gradle.kotlin.dsl.support.kotlinCompilerOptions
+
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.happyfeet.android.application.compose)
+    alias(libs.plugins.happyfeet.jvm.ktor)
     alias(libs.plugins.mapsplatform.secrets.plugin)
 }
 
 android {
     namespace = "com.example.happyfeet"
-    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.happyfeet"
-        minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
-    buildFeatures {
-        compose = true
     }
 }
 

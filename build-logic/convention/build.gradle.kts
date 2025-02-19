@@ -12,3 +12,40 @@ dependencies {
     compileOnly(libs.ksp.gradlePlugin)
     compileOnly(libs.room.gradlePlugin)
 }
+
+gradlePlugin {
+    plugins {
+        register("androidApplication") {
+            id = "happyfeet.android.application"
+            implementationClass = "AndroidApplicationConventionPlugin"
+        }
+        register("androidApplicationCompose") {
+            id = "happyfeet.android.application.compose"
+            implementationClass = "AndroidApplicationComposeConventionPlugin"
+        }
+        register("androidLibrary") {
+            id = "happyfeet.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
+        register("androidLibraryCompose") {
+            id = "happyfeet.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
+        register("androidFeatureUi") {
+            id = "happyfeet.android.feature.ui"
+            implementationClass = "AndroidFeatureUiConventionPlugin"
+        }
+        register("androidRoom") {
+            id = "happyfeet.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
+        register("jvmLibrary") {
+            id = "happyfeet.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
+        register("jvmKtor") {
+            id = "happyfeet.jvm.ktor"
+            implementationClass = "JvmKtorConventionPlugin"
+        }
+    }
+}
